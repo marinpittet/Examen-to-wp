@@ -1,6 +1,10 @@
 <?php get_header() ?>
-
-	<h1>Error 404:</h1>
-	<h2>Página no encontrada</h2>
+	<article class="error">
+	<div class="container">
+		<img class="error-404" src="<?php bloginfo('template_url') ?>/assets/images/error-404.png"" alt="">
+	</div>
+	</article>
 
 <?php get_footer() ?>
+</body>
+</html>

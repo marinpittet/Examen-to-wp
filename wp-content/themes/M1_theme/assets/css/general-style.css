@@ -1,8 +1,55 @@
 /* General
 -------------------- */
 body {
-	background: linear-gradient(to bottom, #86c30e, #86c30e, #99C131);
 	font-family: 'Rubik', sans-serif;
+	background-color: #000;
+}
+ul {
+	padding-left: 0px;
+	-webkit-padding-start: 0px;
+}
+li{
+	list-style: none;
+}
+.home-bg {
+	background: linear-gradient(to bottom, #86c30e, #86c30e, #99C131);
+}
+.bg.portfolio{
+	background-color: #F14634;
+}
+.bg.contact {
+	background-color: #009eb4;
+}
+::-webkit-scrollbar {
+  width: 7px;
+  height: 2px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #fff;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
 }
 /* Fin General
 -------------------- */
@@ -15,7 +62,7 @@ body {
 }
 
 .parallax-bg {
-	background-image: url(../images/portada2.jpg);
+	background-image: url(../images/portada2.png);
 	height: 100%;
 	width: 100%;
 	background-repeat: no-repeat;	
@@ -23,6 +70,39 @@ body {
 	opacity: 0;
 }
 
+/* Header para page-portafolio
+-------------------- */
+.header-bg.portfolio{
+	height: 30vh;
+	width: 100%;
+	background-color: #F14634;
+}
+
+.parallax-bg.portfolio{
+	background-image: url(../images/portada_portafolio.png);
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;	
+	background-position: 50% 50%;
+	opacity: 0;	
+}
+
+/* Header para page-contacto
+-------------------- */
+.header-bg.contact {
+	height: 50vh;
+	width: 100%;
+	background-color: #009eb4;
+}
+
+.parallax-bg.contact {
+	background-image: url(../images/contacto.png);
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;	
+	background-position: 50% 50%;
+	opacity: 0;	
+}
 
 /* Hero y sus derivaciones responden al encabezado general del header
 --------------------- */
@@ -38,6 +118,17 @@ body {
 	text-shadow: 2px 2px 5px rgba(0,0,0,.9), 0 0 3px rgba(0,0,0,0.8);
 	font-family: 'Catamaran', sans-serif;
 	/*font-family: 'Rubik', sans-serif;*/
+}
+
+/* Hero para page-portafolio
+--------------------- */
+.hero-t.portfolio{
+	padding-top: 11vh;
+}
+/* Hero para page-contacto
+--------------------- */
+.hero-t.contact {
+	padding-top: 20vh;
 }
 /* Fin Header
 -------------------- */
@@ -90,7 +181,7 @@ div#myNavbar.navbar-collapse.collapse.in {
 }
 
 .logo {
-	max-height: 50px;
+	max-height: 50PX;
 }
 
 
@@ -115,10 +206,6 @@ article.resumen {
 	color: rgba(153, 193, 49, .9);
 }
 
-.resumen:hover,
-.sobremi:hover {
-	background-color: rgba(153, 193, 49, .9);
-}
 /* Fin sección información personal
 -------------------- */
 
@@ -159,7 +246,7 @@ p.cuerpo {
 	text-align: justify;
 }
 
-div.block {
+.block {
 	position: relative;
 	display: block;
 	border-radius:3px;
@@ -176,7 +263,7 @@ div.block {
 	font-size: 1em;
 }
 
-div.fecha {
+.fecha {
 	display: block;
 	position:absolute;
 	top:0;
@@ -202,7 +289,7 @@ div.fecha {
 
 .sub-title {
 	letter-spacing: .3em;
-	margin-top: 3em;
+	margin-top: 1em;
 	margin-bottom: 1.5em;
 	text-transform: uppercase;
 	text-shadow: 2px 2px 5px rgba(0,0,0,.5), 0 0 3px rgba(0,0,0,0.3);
@@ -226,12 +313,12 @@ div.fecha {
 		border: none;
 	}
 	article.sobremi{
-		background: linear-gradient(to right, rgba(255,255,255,0.8), rgba(255,255,255,1));
+		background: linear-gradient(to right, rgba(255,255,255,0.9), rgba(255,255,255,1));
 		border-radius: 10px 10px 0px 0px;
 		height: 200vh;
 	}
 	article.resumen{
-		background: linear-gradient(to left, rgba(255,255,255,0.8), rgba(255,255,255,1));
+		background: linear-gradient(to left, rgba(255,255,255,0.9), rgba(255,255,255,1));
 		border-radius: 0px;
 		height: 190vh;
 	}
@@ -289,6 +376,10 @@ div.fecha {
 		border-radius: 0px 10px 0px 0px;
 		border-left: solid 0.5px rgba(153, 193, 49, .9);
 	}
+	article.resumen:hover,
+	article.sobremi:hover {
+	background-color: rgba(0,0,0,.8);
+}
 	.header-bg {
 		height: 50vh;
 	}
@@ -296,7 +387,6 @@ div.fecha {
 		padding-top: 22vh;
 	}
 }
-
 
 /* Resumen (skills)
 -------------------- */
@@ -351,6 +441,95 @@ div.fecha {
 -------------------- */
 /* Fin Articulos
 -------------------- */
+
+/* Thumbnail section
+-------------------- */
+.thumbnails {
+	background: linear-gradient(to bottom, #000, #F14634);
+	border-radius: 10px 10px 0px 0px;
+	border: none;
+	height: 100%;
+	padding: 5%;	
+}
+
+.caption h4 {
+	text-align: center;
+	letter-spacing: 0.2em;
+}
+
+.caption p{
+	text-align: left;
+	color: #222;
+}
+
+.caption p.button {
+	text-align: center;
+	letter-spacing: 0.2em;
+}
+
+.caption a.btn {
+	background: linear-gradient(to bottom, #DDDB2F, #99C131);
+	border: solid 1px #99C131;
+}
+
+.grid {
+	max-width: 1170px;
+}
+
+/* clearfix */
+.grid:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/* ---- grid-item media querys ---- */
+.grid-sizer,
+.grid-item { 
+	width: 100%; 
+}
+
+@media (min-width: 600px) {
+	.grid-sizer,
+	.grid-item { 
+		width: 30%; 
+	}
+
+	.gutter-sizer {
+		width: 5%;
+	}
+}
+
+@media (min-width: 900px) {
+	.grid-sizer,
+	.grid-item { 
+		width: 24%; 
+	}
+
+	.gutter-sizer {
+		width: 1.2%;
+	}
+}
+/* Fin Thumbnail section
+-------------------- */
+
+/* Formulario
+-------------------- */
+.formulario {
+	background-color: #fff;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	margin-bottom: 150px;
+}
+.formulario button.btn {
+	background: linear-gradient(to bottom, #DDDB2F, #99C131);
+	border: solid 1px #99C131;
+}
+
+
+/* Fin formulario
+-------------------- */
+
 
 
 /* Footer
@@ -437,10 +616,68 @@ div.fecha {
 		font-size: 1.5em;
 		padding: .6% .8%;
 	}
+	#toTop.portfolio {
+		font-size: 1.5em;
+		padding: .6% .8%;
+	}
+	#toTop.contact {
+		font-size: 1.5em;
+		padding: .6% .8%;
+	}
 }
 
 #toTop:hover{
 	background-color: #DDDB2F;
 	color: #fff;
 	font-weight: 800;	
+}
+
+#toTop.portfolio {
+	display: none;
+	position: fixed;
+	bottom: 10px;
+	right: 5px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color:rgba(255,255,255,0.5);
+	color: #F14634;
+	cursor: pointer;
+	padding: 1.5% 2%;
+	border-radius: 5%;
+}
+
+
+#toTop.portfolio:hover{
+	background-color: #F14634;
+	color: #fff;
+	font-weight: 800;	
+}
+
+#toTop.contact {
+	display: none;
+	position: fixed;
+	bottom: 10px;
+	right: 5px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color:rgba(255,255,255,0.5);
+	color: #009eb4;
+	cursor: pointer;
+	padding: 1.5% 2%;
+	border-radius: 5%;
+}
+
+#toTop.contact:hover{
+	background-color: #009eb4;
+	color: #fff;
+	font-weight: 800;	
+}
+.error-404 {
+	margin-top: 150px;
+	margin-bottom: 80px;
+	max-width: 100%;
+	margin-left: 50%;
+	transform:translateX(-50%);
 }

@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<title>M1 Diseño by Andrés Marín</title>
-	<link rel="icon" href="<?php bloginfo('template_url') ?>/assets/images/M1-favicon-tab.png">
+	<link rel="icon" href="<?php bloginfo('template_url') ?>/assets/images/logo.svg">
 	
 	<!-- CSS -->
 	<?php wp_head() ?>
@@ -29,7 +29,7 @@
 
 				<div>
 					<div class="navbar-nav">
-						<a class="navbar-brand" href="<?php echo home_url(); ?>"><img class="logo" src="<?php bloginfo('template_url') ?>/assets/images/M1-favicon-03.png"></a>
+						<a class="navbar-brand" href="<?php echo home_url(); ?>"><img class="logo" src="<?php bloginfo('template_url') ?>/assets/images/logo.svg"></a>
 					</div>
 				</div> 
 

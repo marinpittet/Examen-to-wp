@@ -3,7 +3,7 @@ if ( is_page( 'contacto' ) ) : ?>
 
 	<fotter class="footer navbar-fixed-bottom">
 		<div class="container">
-			<a class="footer-brand col-lg-1 col-md-1 xol-sm-1 col-xs-2" href="index.html"><img class="logo-footer" src="<?php bloginfo('template_url') ?>/assets/images/M1-favicon-03.png"></a>
+			<a class="footer-brand col-lg-1 col-md-1 xol-sm-1 col-xs-2" href="index.html"><img class="logo-footer" src="<?php bloginfo('template_url') ?>/assets/images/logo.svg"></a>
 			<p class="col-lg-5 col-md-5 col-sm-5 col-xs-10 footer-name">Andrés Marín Pittet | <span class="footer-mail">andres@m1diseno.cl</span></p>
 
 			<a href="https://www.behance.net/AndresMarinPittet" target="_blank" class="link-icon col-lg-1 col-md-1 col-sm-1 col-xs-3"><i class="fab fa-behance-square fa-3x"></i></a>
@@ -20,7 +20,7 @@ if ( is_page( 'contacto' ) ) : ?>
 	
 	<fotter class="footer">
 		<div class="container">
-			<a class="footer-brand col-lg-1 col-md-1 xol-sm-1 col-xs-2" href="index.html"><img class="logo-footer" src="<?php bloginfo('template_url') ?>/assets/images/M1-favicon-03.png"></a>
+			<a class="footer-brand col-lg-1 col-md-1 xol-sm-1 col-xs-2" href="index.html"><img class="logo-footer" src="<?php bloginfo('template_url') ?>/assets/images/logo.svg"></a>
 			<p class="col-lg-5 col-md-5 col-sm-5 col-xs-10 footer-name">Andrés Marín Pittet | <span class="footer-mail">andres@m1diseno.cl</span></p>
 
 			<a href="https://www.behance.net/AndresMarinPittet" target="_blank" class="link-icon col-lg-1 col-md-1 col-sm-1 col-xs-3"><i class="fab fa-behance-square fa-3x"></i></a>

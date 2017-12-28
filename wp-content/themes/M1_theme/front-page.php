@@ -1,5 +1,5 @@
 <?php get_header() ?>
-<div class="main">
+<div class="home-bg">
 	<header class="header-bg">
 		<!-- imagen cover con parallax -->
 		<div class="parallax-bg">
@@ -26,40 +26,42 @@
 							estudiando nuevos softwares, mis vacaciones haciendo trekking en
 						algún parque nacional.</p>
 
-						<div class="educacion">
+						<hr>
+
+						<section class="educacion">
 							<p class="sub-title">Educación</p>
+							<ul>
+								<li class="block" id="block1">
+									<div class="fecha"><span> 2017 </span></div>
+									<p class="cuerpo escuela"><strong class="bold">DESAFIO LATAM</strong></p>
+									<p class="cuerpo nivel">Bootcamp Front End</p>
+								</li>
 
-							<div class="block" id="block1">
-								<div class="fecha"><span> 2017 </span></div>
-								<p class="cuerpo escuela"><strong class="bold">DESAFIO LATAM</strong></p>
-								<p class="cuerpo nivel">Bootcamp Front End</p>
-							</div>
-							
-							<div class="block" id="block2">
-								<div class="fecha"><span> 2016 </span></div>
-								<p class="cuerpo escuela"><strong class="bold">ICUBO UDD + STVP STANFORD</strong></p>
-								<p class="cuerpo nivel">Certificado en Innovación</p>
-							</div>
+								<li class="block" id="block2">
+									<div class="fecha"><span> 2016 </span></div>
+									<p class="cuerpo escuela"><strong class="bold">ICUBO UDD + STVP STANFORD</strong></p>
+									<p class="cuerpo nivel">Certificado en Innovación</p>
+								</li>
 
-							<div class="block" id="block3">
-								<div class="fecha"><span> 2016 </span></div>
-								<p class="cuerpo escuela"><strong class="bold">UNIVERSIDAD DEL DESARROLLO</strong></p>
-								<p class="cuerpo nivel">Diseño de Ambientes y Objetos</p>
-							</div>
+								<li class="block" id="block3">
+									<div class="fecha"><span> 2016 </span></div>
+									<p class="cuerpo escuela"><strong class="bold">UNIVERSIDAD DEL DESARROLLO</strong></p>
+									<p class="cuerpo nivel">Diseño de Ambientes y Objetos</p>
+								</li>
 
-							<div class="block" id="block4">
-								<div class="fecha"><span> 2010 </span></div>
-								<p class="cuerpo escuela"><strong class="bold">UNIVERSIDAD DEL DESARROLLO</strong></p>
-								<p class="cuerpo nivel">Bachiller en Arquitectura</p>
-							</div>
+								<li class="block" id="block4">
+									<div class="fecha"><span> 2010 </span></div>
+									<p class="cuerpo escuela"><strong class="bold">UNIVERSIDAD DEL DESARROLLO</strong></p>
+									<p class="cuerpo nivel">Bachiller en Arquitectura</p>
+								</li>
 
-							<div class="block" id="block5">
-								<div class="fecha"><span> 2007 </span></div>
-								<p class="cuerpo escuela"><strong class="bold">COLEGIO DEL VERBO DIVINO</strong></p>
-								<p class="cuerpo nivel">Enseñanza Pre-Básica, Básica y Media</p>
-							</div>
-
-						</div>
+								<li class="block" id="block5">
+									<div class="fecha"><span> 2007 </span></div>
+									<p class="cuerpo escuela"><strong class="bold">COLEGIO DEL VERBO DIVINO</strong></p>
+									<p class="cuerpo nivel">Enseñanza Pre-Básica, Básica y Media</p>
+								</li>
+							</ul>
+						</section>
 					</div>
 
 				</article>
@@ -74,76 +76,83 @@
 							Proyectos multidisciplinarios mediante Design
 						Thinking.</strong></p>
 
+						<hr>
+
 						<!-- Skill Bars -->
-						<div class="skills">
+						<section class="skills">
 							<p class="sub-title">Skills</p>
+							<ul>
+								<li class="skillbar clearfix " data-percent="90%">
+									<div class="skillbar-title"><span>Photoshop</span></div>
+									<div class="skillbar-bar"></div>
+									<div class="skill-bar-percent">90%</div>
+								</li>
 
-							<div class="skillbar clearfix " data-percent="90%">
-								<div class="skillbar-title"><span>Photoshop</span></div>
-								<div class="skillbar-bar"></div>
-								<div class="skill-bar-percent">90%</div>
-							</div>
+								<li class="skillbar clearfix " data-percent="87%">
+									<div class="skillbar-title"><span>Illustrator</span></div>
+									<div class="skillbar-bar"></div>
+									<div class="skill-bar-percent">87%</div>
+								</li>
 
-							<div class="skillbar clearfix " data-percent="87%">
-								<div class="skillbar-title"><span>Illustrator</span></div>
-								<div class="skillbar-bar"></div>
-								<div class="skill-bar-percent">87%</div>
-							</div>
+								<li class="skillbar clearfix " data-percent="70%">
+									<div class="skillbar-title"><span>HTML5</span></div>
+									<div class="skillbar-bar"></div>
+									<div class="skill-bar-percent">70%</div>
+								</li>
 
-							<div class="skillbar clearfix " data-percent="70%">
-								<div class="skillbar-title"><span>HTML5</span></div>
-								<div class="skillbar-bar"></div>
-								<div class="skill-bar-percent">70%</div>
-							</div>
+								<li class="skillbar clearfix " data-percent="76%">
+									<div class="skillbar-title"><span>CSS3</span></div>
+									<div class="skillbar-bar"></div>
+									<div class="skill-bar-percent">76%</div>
+								</li>
 
-							<div class="skillbar clearfix " data-percent="76%">
-								<div class="skillbar-title"><span>CSS3</span></div>
-								<div class="skillbar-bar"></div>
-								<div class="skill-bar-percent">76%</div>
-							</div>
+								<li class="skillbar clearfix " data-percent="50%">
+									<div class="skillbar-title"><span>Wordpress</span></div>
+									<div class="skillbar-bar"></div>
+									<div class="skill-bar-percent">50%</div>
+								</li>
 
-							<div class="skillbar clearfix " data-percent="50%">
-								<div class="skillbar-title"><span>Wordpress</span></div>
-								<div class="skillbar-bar"></div>
-								<div class="skill-bar-percent">50%</div>
-							</div>
+								<li class="skillbar clearfix " data-percent="80%">
+									<div class="skillbar-title"><span>Blender 3D</span></div>
+									<div class="skillbar-bar"></div>
+									<div class="skill-bar-percent">80%</div>
+								</li>
 
-							<div class="skillbar clearfix " data-percent="80%">
-								<div class="skillbar-title"><span>Blender 3D</span></div>
-								<div class="skillbar-bar"></div>
-								<div class="skill-bar-percent">80%</div>
-							</div>
+								<li class="skillbar clearfix " data-percent="90%">
+									<div class="skillbar-title"><span>Rhinoceros5</span></div>
+									<div class="skillbar-bar"></div>
+									<div class="skill-bar-percent">90%</div>
+								</li>
+							</ul>
+						</section>
 
-							<div class="skillbar clearfix " data-percent="90%">
-								<div class="skillbar-title"><span>Rhinoceros5</span></div>
-								<div class="skillbar-bar"></div>
-								<div class="skill-bar-percent">90%</div>
-							</div>
-
-						</div>
+						<hr>
 						
-						<div class="experiencia">
+						<section class="experiencia">
 							<p class="sub-title">Experiencia Laboral</p>
-							<div class="block" id="block-e1">
-								<div class="fecha"><span> 2016 2017</span></div>
-								<p class="cuerpo empresa"><strong class="bold">COOL MKT</strong></p>
-								<p class="cuerpo cargo">Diseñador Integral y co-productor área industrial</p>
-							</div>
+							<ul>
+								<li class="block" id="block-e1">
+									<div class="fecha"><span> 2016 2017</span></div>
+									<p class="cuerpo empresa"><strong class="bold">COOL MKT</strong></p>
+									<p class="cuerpo cargo">Diseñador Integral y co-productor área industrial</p>
+								</li>
 
-							<div class="block" id="block-e2">
-								<div class="fecha"><span>2011 2014</span></div>
-								<p class="cuerpo empresa"><strong class="bold">UNIVERSIDAD DEL DESARROLLO</strong></p>
-								<p class="cuerpo cargo">Ayudante Introducción Digital, Modelos Avanzados, Medios
-								Digitales y Representación Digital</p>
-							</div>
-						</div>
+								<li class="block" id="block-e2">
+									<div class="fecha"><span>2011 2014</span></div>
+									<p class="cuerpo empresa"><strong class="bold">UNIVERSIDAD DEL DESARROLLO</strong></p>
+									<p class="cuerpo cargo">Ayudante Introducción Digital, Modelos Avanzados, Medios
+									Digitales y Representación Digital</p>
+								</li>
+							</ul>
+						</section>
 
 					</article>
 				</section>
 			</div>
+		</div>
 		
 		<?php get_footer() ?>
 
-			<button id="toTop" title="toTop"><span class="glyphicon glyphicon-chevron-up"></span></button>
-		</body>
-		</html>
+		<button id="toTop" title="toTop"><span class="glyphicon glyphicon-chevron-up"></span></button>
+	</body>
+	</html>

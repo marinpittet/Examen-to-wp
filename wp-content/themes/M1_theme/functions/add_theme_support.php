@@ -13,6 +13,7 @@
 		));
 
 		register_nav_menus( array(
+			'header-menu-right'  => __( 'Header Menu Right' ),
 			'header-menu'  => __( 'Header Menu' ),
 			'footer-menu'  => __( 'Footer Menu' ),
 		) );

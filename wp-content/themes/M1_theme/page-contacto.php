@@ -1,8 +1,9 @@
 <?php get_header() ?>
-	<header class="header-bg">
+<div class="bg contact">
+	<header class="header-bg contact">
 		<!-- imagen cover con parallax -->
-		<div class="parallax-bg">
-			<div class="container hero-t">
+		<div class="parallax-bg contact">
+			<div class="container hero-t contact">
 				<h1 class="hero">Andrés Marín Pittet</h1>
 				<h3 class="hero">Diseñador y Desarrollador Front End</h3>
 			</div>
@@ -25,6 +26,7 @@
 					<input type="text" class="form-control" id="validationDefault02" placeholder="Escribe aquí el asunto" required>
 				</div>
 			</div>
+			<hr>
 			<div class="form-group">
 				<label for="exampleFormControlTextarea1">Mensaje</label>
 				<textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
@@ -33,8 +35,9 @@
 			<button class="btn btn-success btn-send" type="submit" value="Send messaje">Enviar <i class="fas fa-paper-plane"></i></button>
 		</form>
 	</div>
+	</div>
 	
-	<button id="toTop" title="toTop"><span class="glyphicon glyphicon-chevron-up"></span></button>
+	<button id="toTop" class="contact" title="toTop"><span class="glyphicon glyphicon-chevron-up"></span></button>
 
 <?php get_footer() ?>
 </body>
