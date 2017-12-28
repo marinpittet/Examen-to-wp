@@ -180,8 +180,8 @@ div#myNavbar.navbar-collapse.collapse.in {
 	height: 100px;
 }
 
-.logo {
-	max-height: 50PX;
+.navbar-brand .logo {
+	max-height: 50px;
 }
 
 
