@@ -14,6 +14,7 @@ function dl_enqueue_scripts() {
 	wp_register_script('contactScript', get_parent_theme_file_uri('assets/js/contactScript.js'), null, null, true);
 	wp_register_script('portfolioScript', get_parent_theme_file_uri('assets/js/portfolioScript.js'), null, null, true);
 	wp_register_script('jQuery-masonry','https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js', null, null, true);	
+	wp_register_script('flexsliderScript', get_parent_theme_file_uri('assets/js/jquery.flexslider.js'), null, null, true);
 
 
 	if ( is_front_page() ) :
@@ -37,6 +38,7 @@ function dl_enqueue_scripts() {
 		wp_enqueue_script('jQuery3');
 		wp_enqueue_script('jQuery-bootstrap');
 		wp_enqueue_script('indexScript');
+		wp_enqueue_script('flexsliderScript');
 
 	endif;
 	}

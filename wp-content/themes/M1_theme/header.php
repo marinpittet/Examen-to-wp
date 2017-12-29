@@ -29,7 +29,7 @@
 
 				<div>
 					<div class="navbar-nav">
-						<a class="navbar-brand" href="<?php echo home_url(); ?>"><img class="logo" src="<?php bloginfo('template_url') ?>/assets/images/M1-favicon-03.png" alt="logo"></a>
+						<a class="navbar-brand" href="<?php echo home_url(); ?>"><img class="navbar-brand logo" src="<?php bloginfo('template_url') ?>/assets/images/logo.svg" alt="logo"></a>
 					</div>
 				</div> 
 

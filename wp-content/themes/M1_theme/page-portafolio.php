@@ -34,7 +34,7 @@
 						<div class="thumbnail"><?php the_post_thumbnail() ?>
 							<div class="caption">
 								<h4><?php the_title() ?></h4>
-								<p class="content"><?php the_content() ?></p>
+								<p class="content"><?php the_field('sub-title') ?></p>
 								<?php 
 
 								$page = get_the_title();
@@ -42,7 +42,7 @@
 								if( $page ): ?>
 
 								<p class="button">
-									<a href="<?php echo single_post_title( $page ) ; ?>" class="btn btn-primary" role="button">Ver <i class="fas fa-search-plus"></i></a>
+									<a href="<?php the_permalink() ?>" class="btn btn-primary" role="button">Ver <i class="fas fa-search-plus"></i></a>
 								</p>
 
 							<?php endif; ?>	
