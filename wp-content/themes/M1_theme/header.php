@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<title>M1 Diseño by Andrés Marín</title>
-	<link rel="icon" href="<?php bloginfo('template_url') ?>/assets/images/logo.svg">
+	<link rel="icon" href="<?php bloginfo('template_url') ?>/assets/images/M1-favicon-tab.png">
 	
 	<!-- CSS -->
 	<?php wp_head() ?>

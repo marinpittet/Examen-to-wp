@@ -21,36 +21,36 @@ li{
 	background-color: #009eb4;
 }
 ::-webkit-scrollbar {
-  width: 7px;
-  height: 2px;
+	width: 7px;
+	height: 2px;
 }
 ::-webkit-scrollbar-button {
-  width: 0px;
-  height: 0px;
+	width: 0px;
+	height: 0px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #e1e1e1;
-  border: 0px none #ffffff;
-  border-radius: 2px;
+	background: #e1e1e1;
+	border: 0px none #ffffff;
+	border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #ffffff;
+	background: #ffffff;
 }
 ::-webkit-scrollbar-thumb:active {
-  background: #fff;
+	background: #fff;
 }
 ::-webkit-scrollbar-track {
-  background: #333;
-  border: 0px none #ffffff;
+	background: #333;
+	border: 0px none #ffffff;
 }
 ::-webkit-scrollbar-track:hover {
-  background: #666666;
+	background: #666666;
 }
 ::-webkit-scrollbar-track:active {
-  background: #333333;
+	background: #333333;
 }
 ::-webkit-scrollbar-corner {
-  background: transparent;
+	background: transparent;
 }
 /* Fin General
 -------------------- */
@@ -74,7 +74,6 @@ li{
 /* Header para page-portafolio
 -------------------- */
 .header-bg.portfolio{
-	height: 30vh;
 	width: 100%;
 	background-color: #F14634;
 }
@@ -91,7 +90,6 @@ li{
 /* Header para page-contacto
 -------------------- */
 .header-bg.contact {
-	height: 50vh;
 	width: 100%;
 	background-color: #009eb4;
 }
@@ -121,15 +119,12 @@ li{
 	/*font-family: 'Rubik', sans-serif;*/
 }
 
-/* Hero para page-portafolio
---------------------- */
-.hero-t.portfolio{
-	padding-top: 11vh;
-}
-/* Hero para page-contacto
---------------------- */
-.hero-t.contact {
-	padding-top: 20vh;
+img.hero.logo {
+	margin-left: 50%;
+	transform: translateX(-50%);
+	display: block;
+	height: 200px;
+	width: 200px;
 }
 /* Fin Header
 -------------------- */
@@ -222,12 +217,18 @@ article.resumen {
 	display: none;
 }
 
+.separador {
+	padding-bottom: 50px;
+	border-bottom: solid rgba(0,0,0,0.1) 1px;
+	margin-bottom: 20px;
+}
+
 .info_perso {
 	max-width: 100%;
 	margin-bottom: 2em;
 }
 
-.text-box p {
+.text-box p.titulo, p.sub-title {
 	color: #fff;
 	text-align: center;
 }
@@ -326,7 +327,19 @@ article.resumen {
 	.header-bg {
 		height: 100vh;
 	}
+	.header-bg.portfolio{
+		height: 100vh;
+	}
+	.header-bg.contact {
+		height: 100vh;
+	}
 	.hero-t {
+		padding-top: 22vh;
+	}
+	.hero-t.contact {
+		padding-top: 32vh;
+	}
+	.hero-t.portfolio{
 		padding-top: 40vh;
 	}
 }
@@ -359,8 +372,20 @@ article.resumen {
 	.header-bg {
 		height: 50vh;
 	}
+	.header-bg.portfolio{
+		height: 30vh;
+	}
+	.header-bg.contact {
+		height: 50vh;
+	}
 	.hero-t {
-		padding-top: 22vh;
+		padding-top: 12vh;
+	}
+	.hero-t.contact {
+		padding-top: 20vh;
+	}
+	.hero-t.portfolio{
+		padding-top: 11vh;
 	}
 }
 
@@ -379,13 +404,25 @@ article.resumen {
 	}
 	article.resumen:hover,
 	article.sobremi:hover {
-	background-color: rgba(0,0,0,.8);
-}
+		background-color: rgba(0,0,0,.8);
+	}
 	.header-bg {
 		height: 50vh;
 	}
+	.header-bg.portfolio{
+		height: 30vh;
+	}
+	.header-bg.contact {
+		height: 50vh;
+	}
 	.hero-t {
-		padding-top: 22vh;
+		padding-top: 13vh;
+	}
+	.hero-t.contact {
+		padding-top: 20vh;
+	}
+	.hero-t.portfolio{
+		padding-top: 11vh;
 	}
 }
 
@@ -403,23 +440,16 @@ article.resumen {
 	box-sizing: border-box;
 }
 
-.skillbar-title {
-	position:absolute;
-	top:0;
-	left:0;
-	width:110px;
-	font-weight:bold;
-	font-size: 1em;
-	color:rgba(0,0,0,0.7);
-	background:#99C131;
-}
-
-.skillbar-title span {
+.skillbar-title p.title {
+	position: absolute;
 	display:block;
-	background:rgba(0, 0, 0, 0.02);
+	width:110px;
+	background-color:#99C131;
+	color: rgba(0,0,0,0.7);
 	padding:0 20px;
 	height:29px;
 	line-height:29px;
+	margin-bottom: 0;
 }
 
 .skillbar-bar {
@@ -438,6 +468,7 @@ article.resumen {
 	line-height:29px;
 	color:rgba(255, 255, 255, 0.6);
 }
+
 /* Fin Resumen (skills)
 -------------------- */
 /* Fin Articulos

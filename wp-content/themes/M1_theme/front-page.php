@@ -4,6 +4,7 @@
 		<!-- imagen cover con parallax -->
 		<div class="parallax-bg">
 			<div class="container hero-t">
+				<img class="hero logo" src="<?php bloginfo('template_url') ?>/assets/images/logo_bw.svg" alt="logo">
 				<h1 class="hero">Andrés Marín Pittet</h1>
 				<h3 class="hero">Diseñador y Desarrollador Front End</h3>
 			</div>
@@ -26,7 +27,7 @@
 							estudiando nuevos softwares, mis vacaciones haciendo trekking en
 						algún parque nacional.</p>
 
-						<hr>
+						<div class="separador"></div>
 
 						<section class="educacion">
 							<p class="sub-title">Educación</p>
@@ -76,57 +77,57 @@
 							Proyectos multidisciplinarios mediante Design
 						Thinking.</strong></p>
 
-						<hr>
+						<div class="separador"></div>
 
 						<!-- Skill Bars -->
 						<section class="skills">
 							<p class="sub-title">Skills</p>
 							<ul>
 								<li class="skillbar clearfix " data-percent="90%">
-									<div class="skillbar-title"><span>Photoshop</span></div>
+									<div class="skillbar-title"><p class="title">Photoshop</p></div>
 									<div class="skillbar-bar"></div>
 									<div class="skill-bar-percent">90%</div>
 								</li>
 
 								<li class="skillbar clearfix " data-percent="87%">
-									<div class="skillbar-title"><span>Illustrator</span></div>
+									<div class="skillbar-title"><p class="title">Illustrator</p></div>
 									<div class="skillbar-bar"></div>
 									<div class="skill-bar-percent">87%</div>
 								</li>
 
 								<li class="skillbar clearfix " data-percent="70%">
-									<div class="skillbar-title"><span>HTML5</span></div>
+									<div class="skillbar-title"><p class="title">HTML5</p></div>
 									<div class="skillbar-bar"></div>
 									<div class="skill-bar-percent">70%</div>
 								</li>
 
 								<li class="skillbar clearfix " data-percent="76%">
-									<div class="skillbar-title"><span>CSS3</span></div>
+									<div class="skillbar-title"><p class="title">CSS3</p></div>
 									<div class="skillbar-bar"></div>
 									<div class="skill-bar-percent">76%</div>
 								</li>
 
 								<li class="skillbar clearfix " data-percent="50%">
-									<div class="skillbar-title"><span>Wordpress</span></div>
+									<div class="skillbar-title"><p class="title">Wordpress</p></div>
 									<div class="skillbar-bar"></div>
 									<div class="skill-bar-percent">50%</div>
 								</li>
 
 								<li class="skillbar clearfix " data-percent="80%">
-									<div class="skillbar-title"><span>Blender 3D</span></div>
+									<div class="skillbar-title"><p class="title">Blender 3D</p></div>
 									<div class="skillbar-bar"></div>
 									<div class="skill-bar-percent">80%</div>
 								</li>
 
 								<li class="skillbar clearfix " data-percent="90%">
-									<div class="skillbar-title"><span>Rhinoceros5</span></div>
+									<div class="skillbar-title"><p class="title">Rhinoceros5</p></div>
 									<div class="skillbar-bar"></div>
 									<div class="skill-bar-percent">90%</div>
 								</li>
 							</ul>
 						</section>
 
-						<hr>
+						<div class="separador"></div>
 						
 						<section class="experiencia">
 							<p class="sub-title">Experiencia Laboral</p>

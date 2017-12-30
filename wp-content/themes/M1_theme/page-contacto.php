@@ -4,8 +4,8 @@
 		<!-- imagen cover con parallax -->
 		<div class="parallax-bg contact">
 			<div class="container hero-t contact">
-				<h1 class="hero">Andrés Marín Pittet</h1>
-				<h3 class="hero">Diseñador y Desarrollador Front End</h3>
+				<h1 class="hero">Contacto</h1>
+				<h3 class="hero">Andrés Marín Pittet</h3>
 			</div>
 		</div>
 	</header>
@@ -26,7 +26,9 @@
 					<input type="text" class="form-control" id="validationDefault02" placeholder="Escribe aquí el asunto" required>
 				</div>
 			</div>
-			<hr>
+			
+			<div class="separador"></div>
+
 			<div class="form-group">
 				<label for="exampleFormControlTextarea1">Mensaje</label>
 				<textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>
