@@ -65,7 +65,7 @@ $(document).ready(function(){
 					});
 				});
 			});
-		} else if ($(window).scrollTop() > 550) {
+		} else if ($(window).scrollTop() > $(window).height()*0.5) {
 			$('#navbar').css({
 				background: 'linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.8))'
 			});

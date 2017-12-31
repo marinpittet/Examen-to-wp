@@ -119,12 +119,10 @@ li{
 	/*font-family: 'Rubik', sans-serif;*/
 }
 
-img.hero.logo {
+img.herologo {
 	margin-left: 50%;
 	transform: translateX(-50%);
 	display: block;
-	height: 200px;
-	width: 200px;
 }
 /* Fin Header
 -------------------- */
@@ -327,6 +325,9 @@ article.resumen {
 	.header-bg {
 		height: 100vh;
 	}
+	img.herologo {
+	width: 40%;
+	}
 	.header-bg.portfolio{
 		height: 100vh;
 	}
@@ -372,6 +373,9 @@ article.resumen {
 	.header-bg {
 		height: 50vh;
 	}
+	img.herologo {
+	width: 20%;
+	}
 	.header-bg.portfolio{
 		height: 30vh;
 	}
@@ -408,6 +412,9 @@ article.resumen {
 	}
 	.header-bg {
 		height: 50vh;
+	}
+	img.herologo {
+	width: 10%;
 	}
 	.header-bg.portfolio{
 		height: 30vh;

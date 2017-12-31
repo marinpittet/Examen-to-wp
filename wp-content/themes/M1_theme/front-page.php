@@ -4,7 +4,7 @@
 		<!-- imagen cover con parallax -->
 		<div class="parallax-bg">
 			<div class="container hero-t">
-				<img class="hero logo" src="<?php bloginfo('template_url') ?>/assets/images/logo_bw.svg" alt="logo">
+				<img class="herologo" src="<?php bloginfo('template_url') ?>/assets/images/logo_bw.svg" alt="logo">
 				<h1 class="hero">Andrés Marín Pittet</h1>
 				<h3 class="hero">Diseñador y Desarrollador Front End</h3>
 			</div>
