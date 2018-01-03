@@ -1,7 +1,7 @@
 <?php 
 if ( is_page( 'contacto' ) ) : ?>
 
-	<fotter class="footer navbar-fixed-bottom">
+	<footer class="footer navbar-fixed-bottom">
 		<div class="container">
 			<a class="footer-brand col-lg-1 col-md-1 col-sm-1 col-xs-2" href="<?php echo home_url(); ?>"><img class="logo-footer" src="<?php bloginfo('template_url') ?>/assets/images/logo.svg"></a>
 			<p class="col-lg-5 col-md-5 col-sm-5 col-xs-10 footer-name">Andrés Marín Pittet | <span class="footer-mail">andres@m1diseno.cl</span></p>
@@ -14,11 +14,11 @@ if ( is_page( 'contacto' ) ) : ?>
 
 			<a href="https://github.com/marinpittet" target="_blank" class="link-icon col-lg-1 col-md-1 col-sm-1 col-xs-3"><i class="fab fa-github-square fa-3x"></i></a>
 		</div>
-	</fotter>
+	</footer>
 
 <?php else: ?>
 	
-	<fotter class="footer">
+	<footer class="footer">
 		<div class="container">
 			<a class="footer-brand col-lg-1 col-md-1 col-sm-1 col-xs-2" href="<?php echo home_url(); ?>"><img class="logo-footer" src="<?php bloginfo('template_url') ?>/assets/images/logo.svg"></a>
 			<p class="col-lg-5 col-md-5 col-sm-5 col-xs-10 footer-name">Andrés Marín Pittet | <span class="footer-mail">andres@m1diseno.cl</span></p>
@@ -31,7 +31,7 @@ if ( is_page( 'contacto' ) ) : ?>
 
 			<a href="https://github.com/marinpittet" target="_blank" class="link-icon col-lg-1 col-md-1 col-sm-1 col-xs-3"><i class="fab fa-github-square fa-3x"></i></a>
 		</div>
-	</fotter>
+	</footer>
 
 <?php endif;?>
 

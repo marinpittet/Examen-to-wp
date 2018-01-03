@@ -35,12 +35,14 @@ $(document).ready(function(){
 
 /* Masonry plugin
 ----------------------------- */
-	$('.grid').masonry({
-		columnWidth: '.grid-sizer',
-		columnWidth: $('.grid').find('.grid-sizer')[0],
-		itemSelector: '.grid-item',
-		gutter: '.gutter-sizer'
-	});
+	if (jQuery().masonry) {
+		$('.grid').masonry({
+			columnWidth: '.grid-sizer',
+			columnWidth: $('.grid').find('.grid-sizer')[0],
+			itemSelector: '.grid-item',
+			gutter: '.gutter-sizer'
+		});
+	 }
 /* Fin Masonry plugin
 ----------------------------- */
 

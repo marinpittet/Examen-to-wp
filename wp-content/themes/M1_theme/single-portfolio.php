@@ -13,7 +13,7 @@
 	<div class="container">
 		<section class="proyect">
 			
-			<article class="description col-lg-5 col-md-5 col-sm-5 col-xs-12">
+			<article class="description col-lg-5 col-md-5 col-sm-12 col-xs-12">
 				<?php if ( have_posts() ) { ?>
 				<?php while ( have_posts() ) { ?>
 
@@ -28,25 +28,9 @@
 			<!-- Content -->
 			<?php } wp_reset_query(); ?>
 
-			<article class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+			<article class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
 
-				<div class="flexslider">
-					<ul class="slides">
-						<li>
-							<?php if( get_field('image') ): ?>
-
-								<img src="<?php the_field('image'); ?>" />
-
-							<?php endif; ?>
-						</li>
-					</ul>
-				</div>
-
-				<?php if( get_field('image') ): ?>
-
-					<img class="col-lg-12 col-xs-12" src="<?php the_field('image'); ?>" />
-
-				<?php endif; ?>
+				<?php customGallery($post->ID); ?>
 
 			</article>
 		</section>
