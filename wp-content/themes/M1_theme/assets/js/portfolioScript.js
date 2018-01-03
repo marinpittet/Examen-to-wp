@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	$('.parallax-bg').fadeTo(2500, 1);
+
 /* parallax background image
 ----------------------------- */
 	$(window).scroll(function() {
@@ -63,4 +64,10 @@ $(document).ready(function(){
 
 /* fin To Top button animated
 ----------------------------- */
+
+	
+	$('.flexslider').flexslider({
+		animation: "slide"
+	});
+
 });

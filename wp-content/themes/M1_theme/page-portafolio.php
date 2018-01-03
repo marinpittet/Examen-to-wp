@@ -22,7 +22,7 @@
 				<?php
 				$portfolio_params = array(
 					'post_type'     => 'portfolio',
-					'post_per_page' => 24
+					'post_per_page' => -1
 				);
 
 				$get_portfolio = new WP_Query( $portfolio_params );

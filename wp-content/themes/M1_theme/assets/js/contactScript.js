@@ -1,5 +1,11 @@
 $(document).ready(function(){
 	$('.parallax-bg').fadeTo(2500, 1);
+
+	$(window).load(function() {
+		$('.flexslider').flexslider({
+			animation: "slide"
+		});
+	});
 /* parallax background image
 ----------------------------- */
 	$(window).scroll(function() {

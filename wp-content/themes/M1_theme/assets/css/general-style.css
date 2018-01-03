@@ -580,8 +580,11 @@ article.resumen {
 	background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.9));
 }
 
-.logo-footer {
-	max-height: 50PX;
+a.footer-brand img.logo-footer {
+	padding-left: 0;
+	min-width: 50px;
+	max-height: 50px;
+	min-height: 50px;
 	margin-top: 5px;
 }
 
@@ -719,4 +722,15 @@ article.resumen {
 	max-width: 100%;
 	margin-left: 50%;
 	transform:translateX(-50%);
+}
+
+.container section.proyect {
+	background: linear-gradient(to bottom, #000, #F14634);
+	border-radius: 10px 10px 0px 0px;
+	padding: 1%;
+	min-height: 30vh;
+}
+
+.container section.proyect article.description h2.description.title, p.description.text-body {
+	color: #fff;
 }

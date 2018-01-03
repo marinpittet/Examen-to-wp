@@ -11,32 +11,43 @@
 
 	</header>
 	<div class="container">
-		<section class="proyect bg">
-			<?php if ( have_posts() ) { ?>
-			<?php while ( have_posts() ) { ?>
+		<section class="proyect">
+			
 			<article class="description col-lg-5 col-md-5 col-sm-5 col-xs-12">
+				<?php if ( have_posts() ) { ?>
+				<?php while ( have_posts() ) { ?>
+
 				<?php the_post(); ?>
 				
 				<h2 class="description title"><?php the_title() ?></h2>
 				<p class="description text-body"><?php the_field('description') ?></p>
 
 			</article>
+			<?php } ?>
+			<?php } else { ?>
+			<!-- Content -->
+			<?php } wp_reset_query(); ?>
 
-			<article class="slider col-lg-6 col-md-6 col-sm-6 col-xs-12">
+			<article class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
-				<!-- flexslider -->
 				<div class="flexslider">
 					<ul class="slides">
 						<li>
-							<img src="<?php echo do_shortcode('[gallery id="92"]'); ?>" />
+							<?php if( get_field('image') ): ?>
+
+								<img src="<?php the_field('image'); ?>" />
+
+							<?php endif; ?>
 						</li>
 					</ul>
 				</div>
-				<?php echo do_shortcode('[gallery ids="92, 91, 90, 89"]'); ?>
-				<?php } ?>
-				<?php } else { ?>
-				<!-- Content -->
-				<?php } wp_reset_query(); ?>
+
+				<?php if( get_field('image') ): ?>
+
+					<img class="col-lg-12 col-xs-12" src="<?php the_field('image'); ?>" />
+
+				<?php endif; ?>
+
 			</article>
 		</section>
 
