@@ -8,6 +8,7 @@
 				<h1 class="hero">Andrés Marín Pittet</h1>
 				<h3 class="hero">Diseñador y Desarrollador Front End</h3>
 			</div>
+			<button id="down" title="down"><span class="glyphicon glyphicon-chevron-down"></span></button>
 		</div>
 	</header>
 	

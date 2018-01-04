@@ -19,13 +19,13 @@ $(document).ready(function(){
 /* Animations on button click
 ----------------------------- */
 	$(window).ready(function(){
-		if ($(window).scrollTop() > 100) {
+		if ($(window).scrollTop() > $(window).height()*0.9){
 			$('.personal').fadeTo(500, 1);
 		
 		$('.skillbar').each(function(){
 				$(this).find('.skillbar-bar').animate({
 					width:$(this).attr('data-percent')
-				},3000);
+				},5000);
 			});
 			$('#block-e1').fadeTo(1500, 1);
 			$('#block1').fadeTo(1000, 1, function() {
@@ -48,24 +48,7 @@ $(document).ready(function(){
 ----------------------------- */
 // When the user scrolls down 150px from the top of the window, start the animation of te skillbar and block div
 	$(window).scroll(function(){
-		if ($(window).scrollTop() > 150 && $(window).scrollTop() < 250) {
-			$('.skillbar').each(function(){
-				$(this).find('.skillbar-bar').animate({
-					width:$(this).attr('data-percent')
-				},3000);
-			});
-			$('#block-e1').fadeTo(1500, 1);
-			$('#block1').fadeTo(1000, 1, function() {
-				$('#block2').fadeTo(1000, 1, function() {
-					$('#block-e2').fadeTo(1500, 1);
-					$('#block3').fadeTo(900, 1, function() {
-						$('#block4').fadeTo(900, 1, function(){
-							$('#block5').fadeTo(800, 1);
-						});
-					});
-				});
-			});
-		} else if ($(window).scrollTop() > $(window).height()*0.5) {
+		if ($(window).scrollTop() > $(window).height()*0.85) {
 			$('#navbar').css({
 				background: 'linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.8))'
 			});
@@ -73,7 +56,7 @@ $(document).ready(function(){
 			$('.skillbar').each(function(){
 				$(this).find('.skillbar-bar').animate({
 					width:$(this).attr('data-percent')
-				},3000);
+				},5000);
 			});
 			$('#block-e1').fadeTo(1500, 1);
 			$('#block1').fadeTo(1000, 1, function() {
@@ -87,29 +70,12 @@ $(document).ready(function(){
 				});
 			});
 
-		} else {
+		} else if($(window).scrollTop() < $(window).height()*0.8){
 			$('#navbar').css({
 				background: 'linear-gradient(to bottom, rgba(0,0,0,0), rgba(255,255,255,0.05))'
 			});
-
-			$('.skillbar').each(function(){
-				$(this).find('.skillbar-bar').animate({
-					width:$(this).attr('data-percent')
-				},3000);
-			});
-			$('#block-e1').fadeTo(1500, 1);
-			$('#block1').fadeTo(1000, 1, function() {
-				$('#block2').fadeTo(1000, 1, function() {
-					$('#block-e2').fadeTo(1500, 1);
-					$('#block3').fadeTo(900, 1, function() {
-						$('#block4').fadeTo(900, 1, function(){
-							$('#block5').fadeTo(800, 1);
-						});
-					});
-				});
-			});
-		}
-	});
+	};
+});
 /* Fin Skill bars animation
 ----------------------------- */
 
@@ -129,6 +95,11 @@ $(document).ready(function(){
 	$('#toTop').on('click', function(topFunction) {
 		topFunction.preventDefault();
 		$("html, body").animate({scrollTop: 0}, 200);
+	});
+
+	$('#down').on('click', function(topFunction) {
+		topFunction.preventDefault();
+		$("html, body").animate({scrollTop: $(window).height()*1}, 1000);
 	});
 
 /* fin To Top button animated
