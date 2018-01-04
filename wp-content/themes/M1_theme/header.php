@@ -5,6 +5,17 @@
 	<meta name="viewport" content="width=device-width">
 	<title>M1 Diseño by Andrés Marín</title>
 	<link rel="icon" href="<?php bloginfo('template_url') ?>/assets/images/M1-favicon-tab.png">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111956422-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111956422-1');
+</script>
+
 	
 	<!-- CSS -->
 	<?php wp_head() ?>

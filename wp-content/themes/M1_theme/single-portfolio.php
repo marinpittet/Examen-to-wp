@@ -39,8 +39,18 @@
 						<?php customGallery($post->ID); ?>
 					</div>
 				</article>
+		
+				<?php if ( empty(get_field('link_proyecto') ) ) { ?>
+					
+				<?php }else{ ?>
+
+					<span class="button link">
+						<a href="<?php bloginfo('template_url') . the_field('link_proyecto') ?>" class="btn btn-primary" role="button" target="_blank">Link al Proyecto <i class="fas fa-external-link-square-alt"></i></a>
+					</span>
+				<?php } ?>
 
 			</div> 	
+
 			<div class="separador-portfolio"></div>
 
 			<div id="disqus_thread"></div>

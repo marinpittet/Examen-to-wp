@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>ClimaCast</title>
+	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Exo:100|Patua+One" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.js"
+	  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+	  crossorigin="anonymous">
+	</script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body>
+	<!-- mapa api google, todo el lado izquierdo -->
+	<div class="map col-md-6 col-sm-6 col-xs-6" id="map">
+		
+	</div>
+	
+	<!-- información de la página, todo el lado derecho -->
+	<div class="lateral col-sm-6 col-sm-6 col-xs-6">
+		<div class="row">
+			<div class="header">
+				<h1 class="titulo">ClimaCast Chile</h1>
+			</div>
+		</div>
+		<div class="row">
+			<h4 class="subtitulo">Selecciona una Ubicación</h4>
+			<div class="form-group col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+				<select class="form-control seleccion" name="ubicacion" id="select">
+					<option>-- Selecciona una ubicación --</option>
+					<option value="scl">Santiago, Región Metropolitana</option>
+					<option value="ari">Arica, Región de Arica y Parinacota</option>
+					<option value="ant">Antofagasta, Región de Antofagasta</option>
+					<option value="cop">Copiapó, Región de Atacama</option>
+					<option value="ser">La Serena, Región de Coquimbo</option>
+					<option value="val">Valparaiso, Región de Valparaiso</option>
+					<option value="ran">Rancagua, Región de O'Higgins</option>
+					<option value="tal">Talca, Región del Maule</option>
+					<option value="ccp">Concepción, Región del Bio Bio</option>
+					<option value="tem">Temuco, Región de la Araucanía</option>
+					<option value="via">Valdivia, Región de Los Rios</option>
+					<option value="ptm">Puerto Montt, Región de Los Lagos</option>
+					<option value="ays">Coyhaique, Región de Aysén</option>
+					<option value="puq">Punta Arenas, Región de Magallanes</option>
+
+				</select>
+			</div>
+		</div>
+		<div class="row" id="clima">
+			<img class="icon col-md-4" src="#">	
+			<div class="col-md-7">
+				<h2 id="resumen"></h2>	
+				<table class="table table-hover">
+					<tr>
+						<td>Sensación Térmica:</td>
+						<td id="ST"></td>
+					</tr>
+					<tr>
+						<td>Probabilidad de Lluvia:</td>
+						<td id="PL"></td>
+					<tr>
+						<td>Humedad Relativa:</td>
+						<td id="HR"></td>
+					</tr>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>	
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
+	
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxXyxaRMmg9lvmCJI0L4k9t0IU0LQpZfk&callback=initMap"
+    async defer></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

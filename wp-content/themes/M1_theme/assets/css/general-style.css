@@ -763,7 +763,8 @@ div.container section.proyect h2.description.title {
 	height: 100%;
 }
 
-span.button.volver a.btn.btn-primary {
+span.button.volver a.btn.btn-primary, 
+span.button.link a.btn.btn-primary {
 	display: inline-block;
 	float: right;
 	line-height: 0.9em;
@@ -773,8 +774,20 @@ span.button.volver a.btn.btn-primary {
 	border: solid 1px #F14634;
 }
 
-span.button.volver a{
-	color: rgba(255,255,255,0.5);
+span.button.link a.btn.btn-primary {
+	float: right;
+	margin-right: 15px;
+	line-height: 1.2em;
+	border: solid 3px #F14634;
+	font-size: 1.5em;
+}
+
+span.button.volver a {
+	color: rgba(255,255,255,0.6);
+}
+
+span.button.link a {
+	color: rgba(255,255,255,0.9);
 }
 
 

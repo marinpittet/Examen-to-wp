@@ -25,7 +25,7 @@ $(document).ready(function(){
 		$('.skillbar').each(function(){
 				$(this).find('.skillbar-bar').animate({
 					width:$(this).attr('data-percent')
-				},5000);
+				},4000);
 			});
 			$('#block-e1').fadeTo(1500, 1);
 			$('#block1').fadeTo(1000, 1, function() {
@@ -56,7 +56,7 @@ $(document).ready(function(){
 			$('.skillbar').each(function(){
 				$(this).find('.skillbar-bar').animate({
 					width:$(this).attr('data-percent')
-				},5000);
+				},4000);
 			});
 			$('#block-e1').fadeTo(1500, 1);
 			$('#block1').fadeTo(1000, 1, function() {
