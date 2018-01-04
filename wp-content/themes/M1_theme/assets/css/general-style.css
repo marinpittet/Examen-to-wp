@@ -12,13 +12,16 @@ li{
 	list-style: none;
 }
 .home-bg {
-	background: linear-gradient(to bottom, #86c30e, #86c30e, #99C131);
+	background-image: url(../images/pattern.png),linear-gradient(to bottom, #86c30e, #86c30e, #99C131);
+	background-blend-mode: multiply;
 }
 .bg.portfolio{
-	background-color: #F14634;
+	background-image: url(../images/pattern.png),linear-gradient(to bottom, #F14634, #F14634);
+	background-blend-mode: multiply;
 }
 .bg.contact {
-	background-color: #009eb4;
+	background-image: url(../images/pattern.png),linear-gradient(to bottom, #009eb4, #009eb4);
+	background-blend-mode: multiply;
 }
 ::-webkit-scrollbar {
 	width: 7px;
@@ -59,7 +62,8 @@ li{
 -------------------- */
 .header-bg {
 	width: 100%;
-	background-color: #86c30e;
+	background-image: url(../images/pattern.png),linear-gradient(to bottom, #86c30e, #86c30e);
+	background-blend-mode: multiply;
 }
 
 .parallax-bg {
@@ -75,7 +79,8 @@ li{
 -------------------- */
 .header-bg.portfolio{
 	width: 100%;
-	background-color: #F14634;
+	background-image: url(../images/pattern.png),linear-gradient(to bottom, #F14634, #F14634);
+	background-blend-mode: multiply;
 }
 
 .parallax-bg.portfolio{
@@ -91,7 +96,8 @@ li{
 -------------------- */
 .header-bg.contact {
 	width: 100%;
-	background-color: #009eb4;
+	background-image: url(../images/pattern.png),linear-gradient(to bottom, #009eb4, #009eb4);
+	background-blend-mode: multiply;
 }
 
 .parallax-bg.contact {
@@ -484,7 +490,7 @@ article.resumen {
 /* Thumbnail section
 -------------------- */
 .thumbnails {
-	background: linear-gradient(to bottom, #000, #F14634);
+	background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
 	border-radius: 10px 10px 0px 0px;
 	border: none;
 	height: 100%;
@@ -555,7 +561,8 @@ article.resumen {
 /* Formulario
 -------------------- */
 .formulario {
-	background-color: #fff;
+	background-image: url(../images/pattern.png),linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(255,255,255,0.9));
+	background-blend-mode: multiply;
 	padding-top: 70px;
 	padding-bottom: 70px;
 	margin-bottom: 150px;
@@ -725,12 +732,47 @@ a.footer-brand img.logo-footer {
 }
 
 .container section.proyect {
-	background: linear-gradient(to bottom, #000, #F14634);
+	position: relative;
+	background: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
 	border-radius: 10px 10px 0px 0px;
-	padding: 1%;
+	padding: 2%;
 	min-height: 30vh;
+	height: 100%;
+	color: #fff;
 }
 
-.container section.proyect article.description h2.description.title, p.description.text-body {
+.container section.proyect article.description p.description.text-body {
 	color: #fff;
+}
+
+div.container section.proyect h2.description.title {
+	color: rgba(255,255,255,0.9);
+	display: inline-block;
+	margin-left: 15px;
+	letter-spacing: 0.1em;
+}
+
+.separador-portfolio {
+	padding-bottom: 10px;
+	border-bottom: solid rgba(255,255,255,0.7) 1px;
+	margin-bottom: 20px;
+}
+
+.slider-portfolio {
+	display: inline-block;
+	height: 100%;
+}
+
+span.button.volver a.btn.btn-primary {
+	display: inline-block;
+	float: right;
+	line-height: 0.9em;
+	margin-top: 0px;
+	margin-left: 1em;
+	background: transparent;
+	border: solid 1px #F14634;
+}
+
+span.button.volver a{
+	color: rgba(255,255,255,0.5);
 }
