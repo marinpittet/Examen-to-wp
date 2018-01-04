@@ -97,7 +97,7 @@ html[xmlns] .flexslider .slides {
   -moz-user-select: none;
 }
 .flex-viewport {
-  max-height: 2000px;
+  height: auto;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
@@ -276,9 +276,9 @@ html[xmlns] .flexslider .slides {
     right: 10px;
   }
   .flexslider .slides img {
-  height: 100%;
-  max-width: 100%;
-  -moz-user-select: none;
+    height: 100%;
+    max-width: 100%;
+    -moz-user-select: none;
   }
 
 }
