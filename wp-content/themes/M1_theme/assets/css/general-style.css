@@ -402,7 +402,7 @@ article.resumen {
 @media (min-width: 800px) {
 	article.sobremi,
 	article.resumen {
-		height: 100vh;
+		height: 100%;
 	}
 	article.sobremi{
 		border-radius: 10px 0px 0px 0px;
@@ -791,8 +791,9 @@ span.button.link a {
 }
 
 
-#down {
-	bottom: 0;
+button#down {
+	position: absolute;
+	bottom: 5px;
 	margin-left: 50%;
 	z-index: 99;
 	border: none;
@@ -832,26 +833,26 @@ span.button.link a {
 }
 
 @media (min-width: 300px) {
-	#down {
+	button#down {
 		margin-top: 10vh;
 		font-size: 1.5em;
 		padding: 17px 20px 10px 20px;
 }
 
 @media (min-width: 600px) {
-	#down {
-		margin-top: 30vh;
+	button#down {
+		margin-top: 10vh;
 		font-size: 1.5em;
 		padding: 17px 20px 10px 20px;
 }
 
 @media (min-width: 800px) {
-	#down {
-		margin-top: 30vh;
+	button#down {
+		margin-top: 10vh;
 		font-size: 2em;
 		padding: 20px 20px 8px 20px;
 }
-#down:hover{
+button#down:hover{
 	background-color: #DDDB2F;
 	color: #fff;
 	font-weight: 800;	
