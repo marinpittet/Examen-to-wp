@@ -196,7 +196,6 @@ div#myNavbar.navbar-collapse.collapse.in {
 
 article.sobremi,
 article.resumen {
-	height: 100vh;
 	margin: 0;
 	padding: 0;
 }
@@ -403,6 +402,7 @@ article.resumen {
 	article.sobremi,
 	article.resumen {
 		height: 100%;
+		max-height: 1257px;
 	}
 	article.sobremi{
 		border-radius: 10px 0px 0px 0px;
